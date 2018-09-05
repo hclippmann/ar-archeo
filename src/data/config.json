@@ -1,0 +1,27 @@
+{
+  "markers": [{
+    "name": "Skeleton 1",
+    "image": "skeleton_1.png",
+    "pattern": "1.patt",
+    "gmaps": {
+      "description": "",
+      "url": ""
+    }
+  }, {
+    "name": "Skeleton 2",
+    "image": "skeleton_2.png",
+    "pattern": "2.patt",
+    "gmaps": {
+      "description": "",
+      "url": ""
+    }
+  }, {
+    "name": "Skeleton 3",
+    "image": "skeleton_3.png",
+    "pattern": "3.patt",
+    "gmaps": {
+      "description": "",
+      "url": ""
+    }
+  }]
+}
