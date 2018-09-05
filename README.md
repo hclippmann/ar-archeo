@@ -9,7 +9,10 @@
 npm install
 ```
 
-## Run development environment
+## Run development version
 ```bash
 npm start
 ```
+
+## Build production version
+WIP
