@@ -4,7 +4,7 @@
 * Node.js
 * NPM
 
-#Installation
+## Installation
 ```bash
 npm install
 ```
