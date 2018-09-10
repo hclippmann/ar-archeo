@@ -1,9 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: 'public',
@@ -29,16 +30,11 @@ module.exports = {
           }
         }
       }, {
-        test: /\.(dat|patt|jpg|png)$/,
+        test: /\.(patt|jpg|png)$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'file-loader'
         }
-      }, {
-        type: 'javascript/auto',
-        test: /\.json$/,
-        use: [ 'file-loader' ],
-        exclude: /(node_modules)/
       }
     ]
   },
@@ -48,6 +44,13 @@ module.exports = {
       hash: true,
       template: './index.html',
       filename: 'index.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'data',
+        to: 'data',
+        toType: 'dir'
+      }
+    ])
   ]
 };
