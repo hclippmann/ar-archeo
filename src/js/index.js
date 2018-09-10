@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import config from '../data/config';
 import {
   ArToolkitSource,
   ArToolkitContext,
@@ -6,12 +7,13 @@ import {
 } from 'node-ar.js';
 
 const _arToolkitSource = ArToolkitSource(THREE);
-const _config = require('../data/config.json');
 
 let camera, scene, renderer;
 let arToolkitSource, arToolkitContext;
 
 const initalize = () => {
+  console.log('DEBUG:', config);
+
   camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
   scene = new THREE.Scene();
   renderer = new THREE.WebGLRenderer({
@@ -46,7 +48,7 @@ const initalize = () => {
 };
 
 const setupMarkers = () => {
-  _config.markers.forEach(marker => {
+  config.markers.forEach(marker => {
     let markerRoot = new THREE.Group({
       name: marker.name
     });

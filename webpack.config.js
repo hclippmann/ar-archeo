@@ -30,9 +30,15 @@ module.exports = {
         }
       }, {
         test: /\.(dat|patt|jpg|png)$/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'file-loader'
         }
+      }, {
+        type: 'javascript/auto',
+        test: /\.json$/,
+        use: [ 'file-loader' ],
+        exclude: /(node_modules)/
       }
     ]
   },
