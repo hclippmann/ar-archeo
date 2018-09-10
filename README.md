@@ -15,4 +15,7 @@ npm start
 ```
 
 ## Build production version
-WIP
+```bash
+npm run build
+```
+All necessary static files along with the `bundle.js` file will be created in the `public` directory.
