@@ -6,7 +6,13 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
+    publicPath: 'public',
     filename: 'bundle.js'
+  },
+  serve: {
+    dev: {
+      publicPath: '/public/'
+    }
   },
   node: {
     fs: 'empty'
