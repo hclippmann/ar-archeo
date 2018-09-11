@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import config from '../asd/config';
+import config from '../static/config';
 import {
   ArToolkitSource,
   ArToolkitContext,
@@ -36,7 +36,7 @@ const initalize = () => {
   arToolkitSource.init(onResize);
 
   arToolkitContext = new ArToolkitContext({
-    cameraParametersUrl: 'data/parameters/camera_para.dat',
+    cameraParametersUrl: 'static/parameters/camera_para.dat',
     detectionMode: 'mono'
   });
   arToolkitContext.init(() => {
@@ -58,7 +58,7 @@ const setupMarkers = () => {
     let holeGeometry = new THREE.CubeGeometry(6, 2, 3);
     holeGeometry.faces.splice(4, 2);
 
-    loader.load('data/images/soil.jpg', texture => {
+    loader.load('static/images/soil.jpg', texture => {
       let insideMaterial = new THREE.MeshBasicMaterial({
         transparent: true,
         map: texture,
@@ -69,7 +69,7 @@ const setupMarkers = () => {
         side: THREE.FrontSide
       });
 
-      loader.load(`data/images/pictures/${marker.image}`, image => {
+      loader.load(`static/images/pictures/${marker.image}`, image => {
         let bottomMaterial = new THREE.MeshBasicMaterial({
           map: image,
           side: THREE.BackSide
@@ -91,7 +91,7 @@ const setupMarkers = () => {
 
     new ArMarkerControls(arToolkitContext, markerRoot, {
       type: 'pattern',
-      patternUrl: `data/patterns/${marker.pattern}`
+      patternUrl: `static/patterns/${marker.pattern}`
     });
 
     scene.add(markerRoot);
