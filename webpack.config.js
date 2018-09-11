@@ -47,8 +47,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: 'data',
-        to: 'data',
+        from: 'static',
+        to: 'static',
         toType: 'dir'
       }
     ])
