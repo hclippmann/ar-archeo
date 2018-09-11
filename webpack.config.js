@@ -4,11 +4,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    scanner: './src/scanner.js',
+    locations: './src/locations.js'
+  },
   output: {
     path: path.resolve(__dirname, 'public'),
     publicPath: 'public',
-    filename: 'bundle.js'
+    filename: '[name]-bundle.js'
   },
   serve: {
     dev: {
@@ -45,6 +48,12 @@ module.exports = {
       hash: true,
       template: './index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './locations.html',
+      filename: 'locations.html'
     }),
     new CopyWebpackPlugin([
       {
