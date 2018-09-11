@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import config from '../data/config';
+import config from '../asd/config';
 import {
   ArToolkitSource,
   ArToolkitContext,
