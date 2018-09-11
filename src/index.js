@@ -48,7 +48,9 @@ const initalize = () => {
 };
 
 const setupMarkers = () => {
-  config.markers.forEach(marker => {
+  const marker = getMarker();
+
+  if (marker) {
     let markerRoot = new THREE.Group({
       name: marker.name
     });
@@ -91,11 +93,18 @@ const setupMarkers = () => {
 
     new ArMarkerControls(arToolkitContext, markerRoot, {
       type: 'pattern',
-      patternUrl: `static/patterns/${marker.pattern}`
+      patternUrl: 'static/patterns/hiro.patt'
     });
 
     scene.add(markerRoot);
-  });
+  } else {
+    console.warn('Specified markerId not found.');
+  }
+};
+
+const getMarker = () => {
+  const markerId = new URLSearchParams(location.search).get('markerId');
+  return markerId ? config.markers.filter(marker => marker.id.toString() === markerId.toString())[0] : null;
 };
 
 const onResize = () => {
