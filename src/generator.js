@@ -58,6 +58,6 @@ import QrHandler from './qr-handler';
     container.appendChild(generateActions(canvas, marker));
     locations.appendChild(container);
 
-    arMarker.src = '/static/images/markers/hiro.png';
+    arMarker.src = 'static/images/markers/hiro.png';
   });
 })();
