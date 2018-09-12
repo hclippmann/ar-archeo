@@ -1,0 +1,25 @@
+.location-container {
+  display: flex;
+  margin: 25px 5px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.75);
+}
+
+.location-container .information {
+  padding: 12px 12px 12px 0;
+}
+
+.location-container .information .title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.location-container .information .title a {
+  color: #dc143c;
+}
+
+.location-container .information .title a:hover {
+  color: #aa1434;
+}
