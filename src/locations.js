@@ -34,6 +34,6 @@ import QrHandler from './qr-handler';
     container.appendChild(generateInformation(marker.location));
     locations.appendChild(container);
 
-    qrHandler.generateQrCode(canvas, marker);
+    qrHandler.generateQrCodeToCanvas(canvas, marker);
   });
 })();

@@ -6,7 +6,8 @@ module.exports = {
   mode: 'development',
   entry: {
     scanner: './src/scanner.js',
-    locations: './src/locations.js'
+    locations: './src/locations.js',
+    generator: './src/generator.js'
   },
   output: {
     path: path.resolve(__dirname, 'public'),
