@@ -100,7 +100,6 @@ export default class ArHandler {
       });
 
       this.scene.add(markerRoot);
-      this.setupMarker();
     } else {
       console.warn('Specified markerId not found.');
     }
