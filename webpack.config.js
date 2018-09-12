@@ -37,9 +37,6 @@ module.exports = {
         test: /\.(patt|jpg|png)$/,
         exclude: /(node_modules)/,
         use: [ 'file-loader' ]
-      }, {
-        test: /\.css$/,
-        use: [ 'css-loader' ]
       }
     ]
   },
