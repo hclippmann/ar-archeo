@@ -94,7 +94,7 @@ export default class ArHandler {
         });
       });
 
-      const a = new ArMarkerControls(this.arToolkitContext, markerRoot, {
+      new ArMarkerControls(this.arToolkitContext, markerRoot, {
         type: 'pattern',
         patternUrl: 'static/patterns/hiro.patt'
       });
