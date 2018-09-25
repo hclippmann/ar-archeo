@@ -1,0 +1,30 @@
+{
+  "markers": [{
+    "id": 1,
+    "name": "Skeleton 1",
+    "image": "skeleton_1.png",
+    "location": {
+      "name": "Pyramid of Djedefre",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ipsum mollis, viverra elit sed, facilisis tellus. Maecenas et faucibus urna. Sed feugiat sem in elementum tristique. Phasellus eu eros orci. Fusce luctus ornare felis a porttitor. Ut pharetra pretium lacus id facilisis. Suspendisse nisl neque, sodales id nisl sed, mattis viverra lacus. Integer consectetur tincidunt rutrum. Fusce gravida urna vitae magna volutpat aliquet. Maecenas aliquam efficitur scelerisque. Quisque vitae lectus convallis, fringilla leo et, molestie sapien. Curabitur in augue arcu.",
+      "url": "https://www.google.pl/maps/place/Pyramid+of+Djedefre/@29.9255699,31.0768253,11.85z/data=!4m8!1m2!2m1!1spyramids!3m4!1s0x0:0xa199ac8a3aaf130f!8m2!3d30.0322444!4d31.0747004"
+    }
+  }, {
+    "id": 2,
+    "name": "Skeleton 2",
+    "image": "skeleton_2.png",
+    "location": {
+      "name": "Pyramid of Neferirkare",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ipsum mollis, viverra elit sed, facilisis tellus. Maecenas et faucibus urna. Sed feugiat sem in elementum tristique. Phasellus eu eros orci. Fusce luctus ornare felis a porttitor. Ut pharetra pretium lacus id facilisis. Suspendisse nisl neque, sodales id nisl sed, mattis viverra lacus. Integer consectetur tincidunt rutrum. Fusce gravida urna vitae magna volutpat aliquet. Maecenas aliquam efficitur scelerisque. Quisque vitae lectus convallis, fringilla leo et, molestie sapien. Curabitur in augue arcu.",
+      "url": "https://www.google.pl/maps/place/Pyramid+of+Neferirkare/@29.9255699,31.0768253,11.85z/data=!4m8!1m2!2m1!1spyramids!3m4!1s0x0:0xab792df6c068387d!8m2!3d29.8950897!4d31.2022448"
+    }
+  }, {
+    "id": 3,
+    "name": "Skeleton 3",
+    "image": "skeleton_3.png",
+    "location": {
+      "name": "Bent Pyramid",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at ipsum mollis, viverra elit sed, facilisis tellus. Maecenas et faucibus urna. Sed feugiat sem in elementum tristique. Phasellus eu eros orci. Fusce luctus ornare felis a porttitor. Ut pharetra pretium lacus id facilisis. Suspendisse nisl neque, sodales id nisl sed, mattis viverra lacus. Integer consectetur tincidunt rutrum. Fusce gravida urna vitae magna volutpat aliquet. Maecenas aliquam efficitur scelerisque. Quisque vitae lectus convallis, fringilla leo et, molestie sapien. Curabitur in augue arcu.",
+      "url": "https://www.google.pl/maps/place/Bent+Pyramid/@29.9255699,31.0768253,11.85z/data=!4m8!1m2!2m1!1spyramids!3m4!1s0x0:0x6b4d10abcfbdbc95!8m2!3d29.7904516!4d31.2093258"
+    }
+  }]
+}
