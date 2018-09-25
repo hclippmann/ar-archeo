@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import markerConfig from '../../static/markers';
+import config from '../../static/markers';
 import {
   ArToolkitSource,
   ArToolkitContext,
@@ -17,7 +17,7 @@ export default class ArHandler {
   arToolkitContext;
 
   initialize = () => {
-    this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
+    this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.03, 10);
     this.scene = new THREE.Scene();
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
@@ -60,7 +60,7 @@ export default class ArHandler {
 
       let loader = new THREE.TextureLoader();
 
-      let holeGeometry = new THREE.CubeGeometry(6, 2, 3);
+      let holeGeometry = new THREE.CubeGeometry(3, 1, 1.5);
       holeGeometry.faces.splice(4, 2);
 
       loader.load('static/images/soil.jpg', texture => {
@@ -107,7 +107,7 @@ export default class ArHandler {
 
   getMarker = () => {
     const markerId = new URLSearchParams(location.search).get('markerId');
-    return markerId ? markerConfig.markers.filter(marker => marker.id.toString() === markerId.toString())[0] : null;
+    return markerId ? config.markers.filter(marker => marker.id.toString() === markerId.toString())[0] : null;
   };
 
   onResize = () => {
