@@ -1,4 +1,4 @@
-import config from '../static/config';
+import markerConfig from '../static/markers';
 import QrHandler from './qr-handler';
 
 (function() {
@@ -23,7 +23,7 @@ import QrHandler from './qr-handler';
   const locations = document.getElementById('locations');
   const qrHandler = new QrHandler();
 
-  config.markers.forEach(marker => {
+  markerConfig.markers.forEach(marker => {
     let container = document.createElement('div');
     let canvas = document.createElement('canvas');
 

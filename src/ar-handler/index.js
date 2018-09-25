@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import config from '../../static/config';
+import markerConfig from '../../static/markers';
 import {
   ArToolkitSource,
   ArToolkitContext,
@@ -107,7 +107,7 @@ export default class ArHandler {
 
   getMarker = () => {
     const markerId = new URLSearchParams(location.search).get('markerId');
-    return markerId ? config.markers.filter(marker => marker.id.toString() === markerId.toString())[0] : null;
+    return markerId ? markerConfig.markers.filter(marker => marker.id.toString() === markerId.toString())[0] : null;
   };
 
   onResize = () => {
