@@ -46,6 +46,10 @@ export default class ArHandler {
       this.camera.projectionMatrix.copy(this.arToolkitContext.getProjectionMatrix());
     });
 
+    this.camera.position.x = 0;
+    this.camera.position.y = 0;
+    this.camera.position.z = 0;
+
     this.scene.add(this.camera);
     this.setupMarker();
   };
