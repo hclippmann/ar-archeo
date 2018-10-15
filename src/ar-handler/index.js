@@ -100,7 +100,7 @@ export default class ArHandler {
 
       new ArMarkerControls(this.arToolkitContext, markerRoot, {
         type: 'pattern',
-        patternUrl: 'static/patterns/hiro.patt'
+        patternUrl: 'static/patterns/marker.patt'
       });
 
       this.scene.add(markerRoot);

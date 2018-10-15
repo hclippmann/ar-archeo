@@ -48,7 +48,7 @@ import QrHandler from './qr-handler';
     };
 
     qrCode.onload = () => {
-      context.drawImage(qrCode, 234, 120, 120, 120);
+      context.drawImage(qrCode, 256, 154, 102, 102);
     };
 
     container.className = 'generator-container';
@@ -58,6 +58,6 @@ import QrHandler from './qr-handler';
     container.appendChild(generateActions(canvas, marker));
     locations.appendChild(container);
 
-    arMarker.src = 'static/images/markers/hiro.png';
+    arMarker.src = 'static/images/markers/marker.png';
   });
 })();
