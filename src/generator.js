@@ -24,7 +24,7 @@ import QrHandler from './qr-handler';
     dummyLink.className = 'dummy-link';
     dummyLink.href = canvas.toDataURL('image/png');
     dummyLink.download = `ar-code-${marker.id}.png`;
-    dummyLink.click();
+    dummyLink.dispatchEvent(new MouseEvent('click'));
   }
 
   const locations = document.getElementById('generators');
