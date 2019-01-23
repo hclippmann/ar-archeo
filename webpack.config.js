@@ -54,6 +54,12 @@ module.exports = {
       template: './locations.html',
       filename: 'locations.html'
     }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './test.html',
+      filename: 'test.html'
+    }),
     new CopyWebpackPlugin([
       {
         from: 'static',
