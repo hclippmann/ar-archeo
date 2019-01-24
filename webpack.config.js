@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    scanner: './src/scanner.js',
+    scanner: ['babel-polyfill', './src/scanner.js'],
     locations: './src/locations.js',
     generator: './src/generator.js'
   },
@@ -53,12 +53,6 @@ module.exports = {
       hash: true,
       template: './locations.html',
       filename: 'locations.html'
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './test.html',
-      filename: 'test.html'
     }),
     new CopyWebpackPlugin([
       {
