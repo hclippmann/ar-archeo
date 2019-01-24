@@ -14,6 +14,9 @@ ARjs.Source = THREEx.ArToolkitSource = function(parameters){
     // url of the source - valid if sourceType = image|video
     sourceUrl : null,
 
+    // Device id of the camera to use (optional)
+    deviceId : null,
+
     // resolution of at which we initialize in the source image
     sourceWidth: 640,
     sourceHeight: 480,
@@ -196,6 +199,13 @@ ARjs.Source.prototype._initSourceWebcam = function(onReady, onError) {
         }
       }
     }
+
+    if (null !== _this.parameters.deviceId) {
+      userMediaConstraints.video.deviceId = {
+        exact: _this.parameters.deviceId
+      };
+    }
+
     // get a device which satisfy the constraints
     navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function success(stream) {
       // set the .src of the domElement
