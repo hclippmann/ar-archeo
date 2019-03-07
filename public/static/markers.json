@@ -33,7 +33,7 @@
     "location": {
       "name": "Templin im Wald",
       "description": "Lustiges Skelett im Boden. TEST.",
-      "url": "https://www.google.de/maps/place/53%C2%B005'03.2%22N+13%C2%B030'13.5%22E/@53.0842182,13.5015703,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x47a99d070576cadb:0x42120465b5e8140!2s17268+Templin!3b1!8m2!3d53.1168874!4d13.4979688!3m5!1s0x0:0x0!7e2!8m2!3d53.0842153!4d13.5037595"
+      "url": "https://www.google.com/maps/place/52%C2%B029'20.4%22N+13%C2%B023'53.2%22E/@52.4890106,13.3970147,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d52.4890086!4d13.3981087"
     }
   }, {
     "id": 5,
@@ -41,7 +41,7 @@
     "image": "skeleton_3.png",
     "location": {
       "name": "Templin am Wasser",
-      "description": "Nicht-Lustiges Skelett im Boden. TEST.",
+      "description": "Nicht-Lustiges Skelett an der Wand. TEST.",
       "url": "https://www.google.de/maps/place/Angerm%C3%BCnde/@53.0184446,14.0001844,18z/data=!4m5!3m4!1s0x47a9ec6a6a068699:0x11feae258b7584bf!8m2!3d53.0145422!4d13.996593"
     }
   }]
